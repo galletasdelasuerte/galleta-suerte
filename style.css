@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff4e6;
+    color: #6b4226;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+.galleta {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #8b5e3c;
+}
+
+.subtitulo {
+    margin-top: 10px;
+    color: #a47755;
+    font-size: 17px;
+}
+
+.tarjeta {
+    background: #ffffff;
+    border: 2px solid #f0c9a4;
+    border-radius: 24px;
+
+    padding: 35px 25px;
+    margin-top: 30px;
+
+    box-shadow: 0 8px 25px rgba(139, 94, 60, 0.12);
+}
+
+.etiqueta {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #c18b5b;
+    font-weight: bold;
+}
+
+.frase {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #6b4226;
+    margin: 25px 0;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #a47755;
+}
+
+.instruccion {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #a47755;
+    line-height: 1.5;
+}
