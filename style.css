@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff1ed;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #69445f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Tarjeta principal */
+.tarjeta {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    min-height: 760px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 12%, #ffd9e5 0 5px, transparent 6px),
+        radial-gradient(circle at 86% 18%, #ffd45c 0 5px, transparent 6px),
+        radial-gradient(circle at 20% 82%, #f7a6c4 0 5px, transparent 6px),
+        #fff1ed;
+    padding: 42px 28px 30px;
+    text-align: center;
+}
+
+/* Encabezado */
+.encabezado {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    margin: 0;
+    color: #d9367c;
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-shadow: 1px 2px 0 #f8b6ce;
+}
+
+.subtitulo {
+    margin: 22px 0 8px;
+    color: #69445f;
+    font-size: 1rem;
+    line-height: 1.25;
+    font-weight: bold;
+    transform: rotate(-3deg);
+}
+
+/* Imagen de la galletita del llavero */
+.galleta {
+    position: relative;
+    width: 250px;
+    margin: 12px auto 28px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleta img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 8px rgba(180, 91, 45, 0.22));
+}
+
+/* Tarjeta del mensaje */
+.mensaje-contenedor {
+    position: relative;
+    z-index: 3;
+    background: #fffdfb;
+    border: 2px solid #f5b6cf;
+    border-radius: 25px;
+    padding: 22px 18px 18px;
+    box-shadow: 0 8px 18px rgba(190, 100, 145, 0.12);
+}
+
+.mensaje-contenedor::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 2px dashed #f4a1bd;
+    border-radius: 18px;
+    pointer-events: none;
+}
+
+#fecha,
+#frase,
+.separador {
+    position: relative;
+    z-index: 2;
+}
+
+#fecha {
+    margin: 0 0 20px;
+    color: #bd7398;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#frase {
+    margin: 0 auto;
+    max-width: 310px;
+    color: #69445f;
+    font-size: 1.18rem;
+    line-height: 1.45;
+    font-weight: bold;
+}
+
+.separador {
+    margin: 18px auto 0;
+    color: #ef719e;
+    font-size: 1.4rem;
+    letter-spacing: 12px;
+}
+
+/* Frase inferior */
+.frase-inferior {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin: 22px 0 0;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #f77ca4, #ed5f8e);
+    color: white;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(220, 80, 130, 0.2);
+}
+
+.despedida {
+    position: relative;
+    z-index: 3;
+    margin: 22px 0 0;
+    color: #c47b9c;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    transform: rotate(-3deg);
+}
+
+/* Flores decorativas */
+.flor {
+    position: absolute;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    font-size: 4.8rem;
+    line-height: 1;
+    opacity: 0.95;
+}
+
+.flor-rosa {
+    top: -18px;
+    left: -22px;
+    color: #ed4b8a;
+}
+
+.flor-amarilla {
+    top: 250px;
+    right: -25px;
+    color: #ffd13d;
+}
+
+.flor-morada {
+    bottom: -20px;
+    right: -22px;
+    color: #a98bd5;
+}
+
+.flor-naranja {
+    bottom: 125px;
+    left: -25px;
+    color: #ff8741;
+}
+
+/* Flores adicionales */
+.flor-rosa-2 {
+    top: 135px;
+    left: -28px;
+    color: #f05b98;
+    font-size: 4rem;
+    transform: rotate(15deg);
+}
+
+.flor-amarilla-2 {
+    top: 420px;
+    right: -28px;
+    color: #ffd23f;
+    font-size: 4.2rem;
+    transform: rotate(-12deg);
+}
+
+.flor-morada-2 {
+    bottom: 190px;
+    left: -28px;
+    color: #a98bd5;
+    font-size: 4rem;
+    transform: rotate(10deg);
+}
+
+.flor-naranja-2 {
+    bottom: 35px;
+    right: -28px;
+    color: #ff8741;
+    font-size: 4.3rem;
+    transform: rotate(-15deg);
+}
+
+/* Hojas */
+.hoja {
+    position: absolute;
+    z-index: 1;
+    font-size: 2.5rem;
+}
+
+.hoja-1 {
+    top: 20px;
+    right: 70px;
+    transform: rotate(-25deg);
+}
+
+.hoja-2 {
+    top: 330px;
+    left: 12px;
+    transform: rotate(35deg);
+}
+
+.hoja-3 {
+    bottom: 30px;
+    left: 65px;
+    transform: rotate(-30deg);
+}
+
+.hoja-4 {
+    top: 190px;
+    left: 18px;
+    font-size: 2.2rem;
+    transform: rotate(-35deg);
+}
+
+.hoja-5 {
+    top: 520px;
+    right: 12px;
+    font-size: 2.4rem;
+    transform: rotate(30deg);
+}
+
+.hoja-6 {
+    bottom: 115px;
+    left: 25px;
+    font-size: 2.2rem;
+    transform: rotate(-20deg);
+}
+
+/* Puntos decorativos */
+.punto {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.punto-1 {
+    top: 120px;
+    right: 30px;
+    background: #ff9a3d;
+}
+
+.punto-2 {
+    top: 185px;
+    left: 30px;
+    background: #f6c62f;
+}
+
+.punto-3 {
+    bottom: 185px;
+    right: 35px;
+    background: #e76ba1;
+}
+
+.punto-4 {
+    bottom: 85px;
+    left: 28px;
+    background: #a995df;
+}
+
+/* Adaptación para celulares pequeños */
+@media (max-width: 380px) {
+    body {
+        padding: 0;
+    }
+
+    .tarjeta {
+        min-height: 100vh;
+        padding: 35px 20px 25px;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .galleta {
+        width: 220px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    #frase {
+        font-size: 1.05rem;
+    }
+
+    .flor {
+        font-size: 3.8rem;
+    }
+}
