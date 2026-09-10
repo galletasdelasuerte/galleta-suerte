@@ -20,7 +20,7 @@ body {
     width: 100%;
     max-width: 430px;
     min-height: 760px;
-    overflow: hidden;
+    overflow: visible;
     background:
         radial-gradient(circle at 15% 12%, #ffd9e5 0 5px, transparent 6px),
         radial-gradient(circle at 86% 18%, #ffd45c 0 5px, transparent 6px),
@@ -52,7 +52,6 @@ h1 {
     font-size: 1rem;
     line-height: 1.25;
     font-weight: bold;
-    transform: rotate(-3deg);
 }
 
 /* Imagen de la galletita del llavero */
@@ -147,7 +146,6 @@ h1 {
     color: #c47b9c;
     font-size: 0.8rem;
     line-height: 1.3;
-    transform: rotate(-3deg);
 }
 
 /* Flores decorativas */
@@ -193,6 +191,12 @@ h1 {
     transform: rotate(15deg);
 }
 
+.flor-amarilla-3 {
+    top: 450px;
+    left: -30px;
+    color: #ffd13d;
+}
+
 .flor-amarilla-2 {
     top: 420px;
     right: -28px;
@@ -211,7 +215,17 @@ h1 {
 
 .flor-naranja-2 {
     bottom: 35px;
+    top: 700px;
     right: -28px;
+    color: #ff8741;
+    font-size: 4.3rem;
+    transform: rotate(-15deg);
+}
+
+.flor-naranja-3 {
+    bottom: 35px;
+    top: -50px;
+    right: -115px;
     color: #ff8741;
     font-size: 4.3rem;
     transform: rotate(-15deg);
